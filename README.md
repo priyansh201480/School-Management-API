@@ -15,6 +15,15 @@ This project allows users to **add new schools** and **list schools sorted by pr
 
 ---
 
+## Tech Stack: 
+
+- Backend: Node.js, Express.js
+- Database: MySQL
+- Hosting: Render
+- API Testing: Postman.
+
+---
+
 ##  Deployed Links
 - **Live API Base URL:** [https://school-management-api-clc0.onrender.com](https://school-management-api-clc0.onrender.com)  
 - **Postman Collection:** [School Management API Collection](https://www.postman.com/priyanshagarwal-8087186/school-management-apis/collection/x20iahw/school-management-api?action=share&source=copy-link&creator=45738153)  
