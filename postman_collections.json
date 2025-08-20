@@ -34,5 +34,6 @@
       }
     }
   ],
-  "variable": [{ "key": "baseUrl", "value": "http://localhost:3000" }]
+  "variable": [{ "key": "baseUrl", "value": "https://school-management-api-clc0.onrender.com" }]
 }
+
