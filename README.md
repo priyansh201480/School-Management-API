@@ -38,16 +38,16 @@ GET /listSchools?latitude=<user_lat>&longitude=<user_lng>
 
 ##  Local setup 
 ### 1. Clone this repository:
-```http
+```bash
 git clone https://github.com/your-username/school-management-api.git
 cd school-management-api
 ```
 ### 2. Install dependencies:
-```http
+````bash
 npm install
-```
+````
 ### 3. Configure database in .env:
-``` http
+``` bash
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
@@ -55,7 +55,7 @@ DB_PASSWORD=yourpassword
 DB_NAME=schooldb
 ```
 ### 4. Run the server
-```http
+```bash
 npm start
 ```
 ### 5. Test using Postman
