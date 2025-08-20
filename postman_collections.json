@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "School Management API",
+    "_postman_id": "a5c3e2b3-6d0a-4f3d-b3a4-1234567890ab",
+    "description": "APIs for managing schools. Includes endpoints to add a school and list schools sorted by proximity.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Springfield High School\",\n  \"address\": \"742 Evergreen Terrace, Springfield\",\n  \"latitude\": 40.73061,\n  \"longitude\": -73.935242\n}"
+        },
+        "url": { "raw": "{{baseUrl}}/addSchool", "host": ["{{baseUrl}}"], "path": ["addSchool"] }
+      }
+    },
+    {
+      "name": "List Schools",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/listSchools?lat=40.73061&lng=-73.935242",
+          "host": ["{{baseUrl}}"],
+          "path": ["listSchools"],
+          "query": [
+            { "key": "lat", "value": "40.73061" },
+            { "key": "lng", "value": "-73.935242" }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:3000" }]
+}
